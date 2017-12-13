@@ -1,0 +1,49 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'roboto';
+    background-color: #2B2B2B;
+}
+
+h1{
+	color:orange;
+	font-size: 5em;
+	margin-top:3em;
+	font-weight: bolder;
+}
+
+h2{
+	color: orange;
+	font-size:  4em;
+}
+
+h3{
+	color: orange;
+	
+}
+
+#icon1, #icon2{
+	font-size: 2em;
+}
+
+.title{
+	text-align: center;
+}
+
+
+
+.loader {
+	align-content: center;
+    border: 16px solid black; /* Light grey */
+    border-top: 16px solid grey; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
