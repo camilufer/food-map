@@ -15,6 +15,7 @@ h1{
 h2{
 	color: orange;
 	font-size:  4em;
+	cursor: pointer;
 }
 
 h3{
@@ -39,18 +40,30 @@ img{
 	padding:0.5em;
 }
 
+#containerImg img {
+  object-fit: cover;
+  height: 10vh;
+  object-position: center;
+ 
+}
+
+.contenedor-img{
+	width: 100%;
+	color:white;
+}
+
+img:hover{
+  transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -o-transform: scale(0.8);
+}
 
 
 
 
-
-
-
-
-
-
-
-.loader {
+.loader{
 	align-content: center;
     border: 16px solid black; /* Light grey */
     border-top: 16px solid grey; /* Blue */
@@ -58,10 +71,30 @@ img{
     width: 60px;
     height: 60px;
     animation: spin 2s linear infinite;
-
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+
+.container-img-p {
+  width: 100%;
+  position: relative;
+}
+
+.overlay-text {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
