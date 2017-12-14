@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="text/javascript" src="assets/js/app.js"></script>
-  
   <title>FoodMap</title>
 </head>
 
@@ -18,63 +17,47 @@
 <div  class="container-fluid">
   <div class="row">
     <div class="col-xs-12 col-sm-12">
-        <h2 class="text-center">FoodMap</h2>
-
+      <h2 class="text-center">FoodMap</h2>
     </div>
   </div>
   <div class="row">
-     
-      <span id="icon1" style="color: white;" class="col-xs-6 glyphicon glyphicon-unchecked"></span>
-      <span id="icon2" style="color: white;" class="text-right col-xs-6 glyphicon glyphicon-unchecked"></span>
+    <span id="icon1" style="color: white;" class="col-xs-6 glyphicon glyphicon-unchecked"></span>
+    <span id="icon2" style="color: white;" class="text-right col-xs-6 glyphicon glyphicon-unchecked"></span>
   </div>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1">  
       <span ><iframe  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13315.205836968606!2d-70.6038218!3d-33.4544788!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512512357587" width="100%" height="100%;" frameborder="0" style="border:0" allowfullscreen></iframe></span>
     </div>  
   </div>    
-  
   <div class="row">
     <div class="col-xs-12 col-sm-12">
-        <h3 class="text-center">Comida cerca de ti</h3>
+      <h3 class="text-center">Comida cerca de ti</h3>
     </div>
-  </div>     
-    
-<div class="row">
-  <div class="col-xs-8 col-xs-offset-2 form-group">
-  <div style="color: orange;" class="glyphicon glyphicon-search"></div>
-    <label style="color: orange" for="sel1">Filtrar restaurantes:</label>
-      <select class="form-control" id="sel1">
-      <option value="" disabled selected>Selecciona</option>
+  </div>        
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2 form-group">
+      <div style="color: orange;" class="glyphicon glyphicon-search"></div>
+      <label style="color: orange" for="sel1">Filtrar restaurantes:</label>
+        <select class="form-control" id="sel1">
+          <option value="" disabled selected>Selecciona</option>
           <option value="comida-rapida">Comida Rápida</option> 
           <option value="italian">Comida Italiana</option>
           <option value="mexico">Comida Mexicana</option> 
           <option value="japon">Comida Japonesa</option>
           <option value="dulces">Pastelería y dulces</option>
-          <option value="delivery">Entregas con delivery</option>  
-
+          <option value="delivery">Entregas con delivery</option> 
         </select>
+    </div>
   </div>
-</div>
-    <div class="container">
+
+  <div class="container">
     <div class="row">
-       <div id="containerImg"></div>
-    </div>
-    </div>
-
-    <div id="modal" class="modal">
-    <div class="modal-content">
-      <h4 id="title-modal"></h4>
-      <div id="modal-map"></div>
-      <div id="modal-data"></div>
+      <div id="containerImg"></div>
     </div>
   </div>
-
-  
-
 </div> <!-- Container-fluid -->
-  <!-- Scripts -->
+  
   <script src="assets/js/data.js"></script>
- 
   <script src="assets/js/app.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
